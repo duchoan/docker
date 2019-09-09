@@ -10,13 +10,13 @@
 *				MYSQL_USER: my_app
 *				MYSQL_PASSWORD: secret
 *				MYSQL_DATABASE: my_app
-*-> docker-compose build
-*-> docker-create
+* -> docker-compose build
+* -> docker-create
 
-*Open file [docker-compose.yml]
-*delete	{ports:
+* Open file [docker-compose.yml]
+* delete	{ports:
 *		- "3306:3306"}
-*On Visual studio 
+* On Visual studio 
 *	- [docker-compose.yml] right click Compose Restart
 *	- Docker icon click -> right click [..._phpfpm] -> Attach Shell
 *	- Install Php-composer : curl -s https://getcomposer.org/installer | php
