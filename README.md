@@ -14,8 +14,6 @@
 * -> docker-create
 
 * Open file [docker-compose.yml]
-* delete	{ports:
-*		- "3306:3306"}
 * On Visual studio 
 *	- [docker-compose.yml] right click Compose Restart
 *	- Docker icon click -> right click [..._phpfpm] -> Attach Shell

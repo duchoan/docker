@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    restart: always
+    restart: "no"
     build: ./data/mysql/
     volumes:
       - "./data/mysql/db:/var/lib/mysql"
@@ -14,7 +14,7 @@ services:
     ports:
       - "3306:3306"
   nginx:
-    restart: always
+    restart: "no"
     image: "nginx:mainline-alpine"
     ports:
       - "80:80"
@@ -29,7 +29,7 @@ services:
     links:
       - phpfpm
   phpfpm:
-    restart: always
+    restart: "no"
     build: ./data/phpfpm/
     environment:
       TZ: "Asia/Tokyo"
